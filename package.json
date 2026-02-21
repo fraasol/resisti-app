@@ -5,13 +5,14 @@
   "private": true,
   "homepage": "https://fraasol.github.io/resisti-app",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "predeploy": "npx expo export --platform web",
-    "deploy": "gh-pages -t true -d dist"
-  },
+  "start": "expo start",
+  "android": "expo start --android",
+  "ios": "expo start --ios",
+  "web": "expo start --web",
+  "build": "npx expo export --platform web",
+  "predeploy": "npm run build",
+  "deploy": "touch dist/.nojekyll && gh-pages -t -d dist"
+},
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
     "@react-native-async-storage/async-storage": "2.2.0",
