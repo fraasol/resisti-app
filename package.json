@@ -10,7 +10,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "predeploy": "npx expo export --platform web",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -t true -d dist"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
